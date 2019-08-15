@@ -95,7 +95,7 @@ header {
 }
 
 .services {
-    background-image: url('/css-tasks/task1/img/handwithapen.png');
+    background-image: url('../img/handwithapen.png');
     @include background-image;
     height: 320px;
     color: white;

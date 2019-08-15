@@ -82,7 +82,7 @@ header {
       line-height: 18px; }
 
 .services {
-  background-image: url("/css-tasks/task1/img/handwithapen.png");
+  background-image: url("../img/handwithapen.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top right;
