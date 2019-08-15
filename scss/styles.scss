@@ -1,0 +1,233 @@
+@import 'globalstyles.scss', '_variables.scss';
+
+@font-face {
+    font-family: 'Lato';
+    src: url("../fonts/Lato-Regular.ttf")
+}
+
+header {
+    height: 100vh;
+    background-image: url("../img/header.png");
+    @include background-image;
+
+    .logo {
+        width: 37%;
+        height: 40%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        @include flex-center-center;
+        color: $base-color;
+
+        &-image {
+            position: absolute;
+            top: -50px;
+        }
+
+        h1 {
+            font-size: 38px;
+            line-height: 44px;
+            letter-spacing: 4px;
+            margin-top: 15%;
+        }
+
+        p {
+            @include small-text;
+            padding: 20px 60px;
+
+        }
+
+        &-bottom-image {
+            position: absolute;
+            bottom: -100px;
+        }
+
+    }
+}
+
+.section-small {
+    height: 418px;
+    @include flex-center-center;
+
+    .content-block {
+        padding: 0px 60px;
+        border: $border-grey;
+        border-top: none;
+        width: 600px;
+        height: 50%;
+        position: relative;
+        @include flex-center-center;
+
+        &-title {
+            @include flex-center-center;
+            letter-spacing: 3px;
+            width: 47%;
+            height: 50px;
+            position: absolute;
+            left: 27%;
+            top: -25px;
+
+            &:before,
+            &:after {
+                content: "";
+                width: 150px;
+                position: absolute;
+                border-top: $border-grey;
+            }
+
+            &:before {
+                left: 102%;
+            }
+
+            &:after {
+                right: 104%;
+            }
+        }
+
+        &-text {
+            padding: 40px;
+            @include small-text;
+        }
+
+    }
+
+}
+
+.services {
+    background-image: url('/css-tasks/task1/img/handwithapen.png');
+    @include background-image;
+    height: 320px;
+    color: white;
+
+    .content-block {
+        border: $border-white;
+        border-top: none;
+
+        &-title:before,
+        &-title:after {
+            border: $border-thin
+        }
+
+    }
+
+
+}
+
+.block-what-we-do {
+    height: 940px;
+
+    img {
+        width: 55px;
+        margin: 30px 20px 20px;
+    }
+
+    .content-block {
+        padding: 40px 60px;
+        height: 790px;
+        margin-top: 35px;
+
+        h2 {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+        }
+
+        p {
+            margin: 22px 0px 25px;
+            @include small-text;
+        }
+    }
+}
+
+.picture-menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+
+    li {
+        img {
+            width: 100%;
+        }
+
+        height: inherit;
+        list-style: none;
+        width: 28.5%;
+        position: relative;
+
+        &:nth-child(2),
+        &:nth-child(5) {
+            width: 42%
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 20%;
+            left: 10%;
+            color: $base-color;
+            font-size: 30px;
+        }
+    }
+
+
+}
+
+.contacts-block {
+    height: 320px;
+
+    .content-block {
+        margin: 40px 0px 0px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 20px;
+        letter-spacing: 2.5px;
+    }
+
+    p {
+        margin: 20px 10px 0px;
+        font-size: $small-text;
+    }
+
+    button {
+        width: 265px;
+        height: 40px;
+        border: $border-grey;
+        background-color: #3c3c3c;
+        color: white;
+        font-size: $small-text;
+    }
+
+    button:hover {
+        color: #494949;
+        text-decoration: none;
+        background: #ffffff;
+        border: 4px solid #494949;
+        display: inline-block;
+        transition: all 0.4s ease 0s;
+    }
+}
+
+footer {
+    height: 70px;
+    @include flex-center;
+
+}
+
+.footer-container {
+    img {
+        height: 25px;
+        margin: 0px 10px;
+    }
+
+    p {
+        font-size: $small-text;
+    }
+
+    display: flex;
+    align-items: center;
+}
+
+@import 'media-mw-720.scss', 'media-mw-600.scss', 'media-mw-320.scss';

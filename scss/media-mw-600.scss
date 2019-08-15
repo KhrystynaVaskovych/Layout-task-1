@@ -1,0 +1,19 @@
+
+@media screen and (max-width: 600px) {
+    .section-small {
+        .content-block {
+            width: 316px;
+
+            &-title {
+                    h1 {
+                        font-size: 20px;
+                    }
+                &:before,
+                &:after {
+                    width: 79.5px;
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,228 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Lato'; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Regular.ttf"); }
+
+header {
+  height: 100vh;
+  background-image: url("../img/header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right; }
+  header .logo {
+    width: 37%;
+    height: 40%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; }
+    header .logo-image {
+      position: absolute;
+      top: -50px; }
+    header .logo h1 {
+      font-size: 38px;
+      line-height: 44px;
+      letter-spacing: 4px;
+      margin-top: 15%; }
+    header .logo p {
+      font-size: 10px;
+      line-height: 18px;
+      padding: 20px 60px; }
+    header .logo-bottom-image {
+      position: absolute;
+      bottom: -100px; }
+
+.section-small {
+  height: 418px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .section-small .content-block {
+    padding: 0px 60px;
+    border: 1px solid #3c3c3c;
+    border-top: none;
+    width: 600px;
+    height: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .section-small .content-block-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 3px;
+      width: 47%;
+      height: 50px;
+      position: absolute;
+      left: 27%;
+      top: -25px; }
+      .section-small .content-block-title:before, .section-small .content-block-title:after {
+        content: "";
+        width: 150px;
+        position: absolute;
+        border-top: 1px solid #3c3c3c; }
+      .section-small .content-block-title:before {
+        left: 102%; }
+      .section-small .content-block-title:after {
+        right: 104%; }
+    .section-small .content-block-text {
+      padding: 40px;
+      font-size: 10px;
+      line-height: 18px; }
+
+.services {
+  background-image: url("/css-tasks/task1/img/handwithapen.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  height: 320px;
+  color: white; }
+  .services .content-block {
+    border: 1px solid white;
+    border-top: none; }
+    .services .content-block-title:before, .services .content-block-title:after {
+      border: 0.5px solid white; }
+
+.block-what-we-do {
+  height: 940px; }
+  .block-what-we-do img {
+    width: 55px;
+    margin: 30px 20px 20px; }
+  .block-what-we-do .content-block {
+    padding: 40px 60px;
+    height: 790px;
+    margin-top: 35px; }
+    .block-what-we-do .content-block h2 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2.5px; }
+    .block-what-we-do .content-block p {
+      margin: 22px 0px 25px;
+      font-size: 10px;
+      line-height: 18px; }
+
+.picture-menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly; }
+  .picture-menu li {
+    height: inherit;
+    list-style: none;
+    width: 28.5%;
+    position: relative; }
+    .picture-menu li img {
+      width: 100%; }
+    .picture-menu li:nth-child(2), .picture-menu li:nth-child(5) {
+      width: 42%; }
+    .picture-menu li .caption {
+      position: absolute;
+      bottom: 20%;
+      left: 10%;
+      color: white;
+      font-size: 30px; }
+
+.contacts-block {
+  height: 320px; }
+  .contacts-block .content-block {
+    margin: 40px 0px 0px;
+    height: 200px; }
+  .contacts-block h1 {
+    font-size: 20px;
+    letter-spacing: 2.5px; }
+  .contacts-block p {
+    margin: 20px 10px 0px;
+    font-size: 10px; }
+  .contacts-block button {
+    width: 265px;
+    height: 40px;
+    border: 1px solid #3c3c3c;
+    background-color: #3c3c3c;
+    color: white;
+    font-size: 10px; }
+  .contacts-block button:hover {
+    color: #494949;
+    text-decoration: none;
+    background: #ffffff;
+    border: 4px solid #494949;
+    display: inline-block;
+    transition: all 0.4s ease 0s; }
+
+footer {
+  height: 70px;
+  display: flex;
+  justify-content: center; }
+
+.footer-container {
+  display: flex;
+  align-items: center; }
+  .footer-container img {
+    height: 25px;
+    margin: 0px 10px; }
+  .footer-container p {
+    font-size: 10px; }
+
+@media screen and (max-width: 720px) {
+  header .logo {
+    width: 100%; }
+    header .logo-image {
+      position: absolute;
+      top: -10%; }
+  .picture-menu .image-block {
+    height: 120px;
+    margin-top: 5px; }
+  .picture-menu img {
+    height: 100%; }
+  .picture-menu li {
+    width: 49%; }
+    .picture-menu li:nth-child(2), .picture-menu li:nth-child(5) {
+      width: 49%; }
+    .picture-menu li .caption {
+      font-size: 20px; }
+  .section-small .content-block {
+    padding: 0px 0px; }
+    .section-small .content-block-text {
+      padding: 10px; } }
+
+@media screen and (max-width: 600px) {
+  .section-small .content-block {
+    width: 316px; }
+    .section-small .content-block-title h1 {
+      font-size: 20px; }
+    .section-small .content-block-title:before, .section-small .content-block-title:after {
+      width: 79.5px; } }
+
+@media screen and (max-width: 320px) {
+  header .logo h1 {
+    font-size: 20px;
+    line-height: 40px; }
+  .section-small .content-block {
+    padding: 0px 5px; }
+    .section-small .content-block-title h1 {
+      font-size: 20px; }
+    .section-small .content-block-title:before, .section-small .content-block-title:after {
+      width: 80px; }
+    .section-small .content-block-title:before {
+      left: 101%; }
+    .section-small .content-block-title:after {
+      left: -58%; }
+    .section-small .content-block-text {
+      padding: 20px; }
+  .picture-menu li {
+    width: 100%; }
+    .picture-menu li:nth-child(2), .picture-menu li:nth-child(5) {
+      width: 100%; }
+    .picture-menu li .caption {
+      font-size: 15px; }
+  .block-what-we-do img {
+    margin: 0px 20px 18px; } }

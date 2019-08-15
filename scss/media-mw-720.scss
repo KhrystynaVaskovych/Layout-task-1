@@ -1,0 +1,52 @@
+@media screen and (max-width: 720px) {
+    header {
+        .logo {
+            width: 100%;
+
+            &-image {
+                position: absolute;
+                top: -10%;
+            }
+        }
+    }
+
+    .picture-menu {
+        .image-block {
+            height: 120px;
+            margin-top: 5px;
+        }
+
+        img {
+            height: 100%;
+
+        }
+
+        li {
+            width: 49%;
+
+            &:nth-child(2),
+            &:nth-child(5) {
+                width: 49%
+            }
+
+            .caption {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .section-small {
+        .content-block {
+            padding: 0px 0px;
+
+            &-text {
+                padding: 10px;
+            }
+
+        }
+
+    }
+
+
+
+}

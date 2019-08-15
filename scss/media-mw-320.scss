@@ -1,0 +1,63 @@
+@media screen and (max-width: 320px) {
+    header {
+        .logo {
+            h1 {
+                font-size: 20px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    .section-small {
+        .content-block {
+            padding: 0px 5px;
+
+            &-title {
+                h1 {
+                    font-size: 20px;
+                }
+
+                &:before,
+                &:after {
+                    width: 80px;
+                }
+
+                &:before {
+                    left: 101%;
+                }
+
+                &:after {
+                    left: -58%;
+                }
+            }
+
+            &-text {
+                padding: 20px;
+            }
+
+        }
+
+    }
+
+    .picture-menu {
+        li {
+            width: 100%;
+
+            &:nth-child(2),
+            &:nth-child(5) {
+                width: 100%
+            }
+
+            .caption {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .block-what-we-do {
+        img {
+            margin: 0px 20px 18px;
+        }
+    }
+
+}

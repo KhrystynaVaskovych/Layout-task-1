@@ -1,0 +1,27 @@
+$border-grey: 1px solid #3c3c3c;
+$border-white: 1px solid white;
+$base-color: white;
+$small-text: 10px;
+$border-thin: 0.5px solid white;
+
+@mixin small-text {
+    font-size: 10px;
+    line-height: 18px;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin background-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
